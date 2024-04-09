@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/reset.css') }}">
+    <title>Select Language</title>
+</head>
+<body>
+    <h1>Select Your Language</h1>
+    <form method="POST">
+        <label for="language">Choose your language:</label>
+        <select name="language" id="language">
+            <option value="english">English</option>
+            <option value="russian">Russian</option>
+            <option value="kazakh">Kazakh</option>
+        </select>
+        <button class="button" type="submit">Submit</button>
+    </form>
+</body>
+</html>
